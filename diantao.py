@@ -10,17 +10,23 @@ from utils import hd
 
 d = u2.connect("192.168.168.190:5566")  #
 width, height = d.window_size()
-print(d)
-
+print(d.info)
+d.app_start("com.taobao.live")
 d.sleep(3)
 
-
+d(resourceId="com.taobao.live:id/gold_center_image").click()
+d.sleep(3)
 # d.app_stop_all()
 # d.click(1090, 536)
 # d.app_start("com.")
 startTm = time.time()
 
-
+while(True):
+    if(d(text="今日签到").exists):
+        break
+    hd(d,1,3,startTm)
+d(text="今日签到").click()
+d.sleep(2)
 
 while(len(d(text="去完成"))>0):
     d(text="去完成").click()
