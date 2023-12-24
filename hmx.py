@@ -13,11 +13,11 @@ def TimePrint():
         print("已运行" + str(t // 3600) + "h" + str((t % 3600)//60) + "m"+ str(t % 60) + "s")
 
 
-# d = u2.connect_usb("71bc638d")  # id 为 adb devices 命令中得到的设备 id
+d = u2.connect_usb("71bc638d")  # id 为 adb devices 命令中得到的设备 id
 
 # 无线连接
 
-d = u2.connect("192.168.168.177:5567")  #
+d = u2.connect("192.168.1.105:5567")  #
 width, height = d.window_size()
 print(d)
 d.sleep(3)

@@ -12,6 +12,7 @@ d = u2.connect("192.168.168.190:5566")  #
 print(d.info)
 width, height = d.window_size()
 
+startTm = time.time()
 
 while(True):
     if(d(text="今日签到").exists):
