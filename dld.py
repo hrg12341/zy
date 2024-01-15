@@ -12,7 +12,6 @@ keys = ['left', 'right', 'up', 'down']
 skill_keys = ['a', 's']
 x = 0
 y = 0
-xsx
 app = tk.Tk()
 
 def on_press(key):
