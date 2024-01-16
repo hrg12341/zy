@@ -80,6 +80,8 @@ def choseRole(type):
 keyboard_listener = keyboard.Listener(on_press=on_press)
 keyboard_listener.start()
 
-stop_event = threading.Event()
 
+stop_event = threading.Event()
+app.title("刷深渊图")
+app.geometry("600x150")
 app.mainloop()
