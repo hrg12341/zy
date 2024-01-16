@@ -22,7 +22,7 @@ def autow():
     pydirectinput.press('esc')
     time.sleep(0.3)
     pydirectinput.press('f10')
-    time.sleep(3.3)
+    time.sleep(2.9)
 
 def ms():
     # 上buff
@@ -173,7 +173,7 @@ def naima():
 
     run(1.86)
     pydirectinput.press('s')
-    time.sleep(0.65)
+    time.sleep(0.85)
 
     pydirectinput.press('d')
     time.sleep(0.44)
@@ -184,6 +184,81 @@ def naima():
 
     autow()
 
+
+def nq():
+    # 上buff
+    pydirectinput.press(['right', 'right', 'space'])
+    time.sleep(0.6)
+
+    run(1.78)
+
+     # 第一张图
+    pydirectinput.press('s')
+    time.sleep(0.7)
+
+    run(2.04)
+
+    # 第二张图
+    # time.sleep(0.3)
+    pydirectinput.press('s')
+    time.sleep(1)
+
+    run(2.41)
+
+    pydirectinput.press('a')
+    time.sleep(0.85)
+    pydirectinput.press('g')
+    time.sleep(0.5)
+
+    pydirectinput.press('y')
+    # time.sleep(0.44)
+    # pydirectinput.press(['e','r','w'])
+    time.sleep(8)
+
+
+    autow()
+
+
+def zhaohuan():
+    # 上buff
+
+    pydirectinput.press(['right', 'space'])
+    time.sleep(1.3)
+    pydirectinput.press(['right', 'right', 'space'])
+    time.sleep(0.6)
+    pydirectinput.press(['space','ctrl'])
+    time.sleep(0.1)
+    run(2.18)
+
+     # 第一张图
+    pydirectinput.press('a')
+    time.sleep(0.7)
+
+    run(2.24)
+
+    # 第二张图
+    # time.sleep(0.3)
+    pydirectinput.press('a')
+    time.sleep(1.2)
+
+    run(2.41)
+
+    pydirectinput.press('a')
+    time.sleep(0.65)
+    pydirectinput.press('alt')
+    time.sleep(0.5)
+    pydirectinput.press('q')
+    time.sleep(0.2)
+    pydirectinput.press(['left','z'])
+    time.sleep(0.8)
+
+    pydirectinput.press(['ctrl','g'])
+    # time.sleep(0.44)
+    # pydirectinput.press(['e','r','w'])
+    time.sleep(9.8)
+
+
+    autow()
 
 
 
