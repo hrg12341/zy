@@ -1,18 +1,10 @@
 import time
-from dnf import ms,huahua,axl,lvren,naima,nq,zhaohuan
+from skill import ms,huahua,axl,lvren,naima,nq,zhaohuan
 import math
-from pynput import keyboard
-import threading
-import tkinter as tk
-
-pl = 110
-type = 8
-
-count = math.ceil(pl / 6)
+import sys
 
 def main():
     event()
-
 
 def event():
     name = choseRole(type)
@@ -58,4 +50,9 @@ def shuatu(type):
        zhaohuan()
 
 if __name__ == "__main__":
+    global count,type
+    pl = int(sys.argv[1])
+    type = int(sys.argv[2])
+    print(pl)
+    count = math.ceil(pl / 6)
     main()
