@@ -16,7 +16,7 @@ def autow():
     pydirectinput.press('0')
     time.sleep(0.2)
     pydirectinput.keyDown('x')
-    time.sleep(3.2)
+    time.sleep(4.2)
     pydirectinput.keyUp('x')
     time.sleep(0.8)
     pydirectinput.press('esc')
@@ -58,7 +58,7 @@ def ms():
 def huahua():
     # 上buff
     pydirectinput.press(['right', 'right', 'space'])
-    pydirectinput.press(['up', 'up', 'space','down'])
+    pydirectinput.press(['up', 'up', 'space','down','down'])
     time.sleep(0.2)
 
 
@@ -66,6 +66,8 @@ def huahua():
     # 第一张图
     pydirectinput.press('a')
     time.sleep(0.6)
+    pydirectinput.press("space")
+    time.sleep(0.3)
 
     run(1.2)
     # 第二张图
