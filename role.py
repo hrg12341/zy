@@ -5,8 +5,8 @@ from pynput import keyboard
 import threading
 import tkinter as tk
 
-pl = 140
-type = 3
+pl = 110
+type = 8
 
 count = math.ceil(pl / 6)
 

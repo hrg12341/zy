@@ -48,7 +48,8 @@ def ms():
     #第三张图
     pydirectinput.press('a')
     time.sleep(0.8)
-
+    pydirectinput.press('f')
+    time.sleep(0.7)
     pydirectinput.press('h')
     time.sleep(5)
 
@@ -90,23 +91,25 @@ def huahua():
 def axl():
     # 上buff
     pydirectinput.press(['right', 'right', 'space'])
-    pydirectinput.press(['up', 'up', 'space','down','down'])
+    pydirectinput.press(['up', 'up', 'space'])
     pydirectinput.press('alt')
+    pydirectinput.keyDown("down")
     time.sleep(0.2)
+    pydirectinput.keyUp("down")
+    time.sleep(0.1)
 
-
-    run(1.4)
+    run(1.5)
     # 第一张图
     pydirectinput.press('q')
     time.sleep(0.6)
 
-    run(1.3)
+    run(1.4)
     # 第二张图
     # time.sleep(0.3)
     pydirectinput.press('e')
     time.sleep(1)
 
-    run(2.1)
+    run(1.9)
 
     pydirectinput.press('a')
     time.sleep(0.6)
@@ -116,7 +119,9 @@ def axl():
     pydirectinput.press('y')
     time.sleep(1.6)
     pydirectinput.press('r')
-    time.sleep(1)
+    time.sleep(0.7)
+    pydirectinput.press("s")
+    time.sleep(0.3)
     pydirectinput.press('g')
     time.sleep(3)
 
@@ -137,20 +142,21 @@ def lvren():
     # 第二张图
     # time.sleep(0.3)
     pydirectinput.press('f')
-    time.sleep(1)
+    time.sleep(0.5)
 
     run(1.56)
 
     pydirectinput.press('s')
-    time.sleep(0.44)
+    time.sleep(0.84)
     # pydirectinput.press(['right','space'])
     # time.sleep(0.5)
 
+    pydirectinput.press('q')
+    time.sleep(0.4)
     pydirectinput.press('alt')
     time.sleep(0.5)
     pydirectinput.press('r')
-    time.sleep(1)
-    pydirectinput.press('q')
+
     time.sleep(2.6)
 
     autow()
@@ -198,14 +204,14 @@ def nq():
     pydirectinput.press('s')
     time.sleep(0.7)
 
-    run(2.04)
+    run(1.84)
 
     # 第二张图
     # time.sleep(0.3)
     pydirectinput.press('s')
     time.sleep(1)
 
-    run(2.41)
+    run(2.01)
 
     pydirectinput.press('a')
     time.sleep(0.85)
@@ -230,20 +236,20 @@ def zhaohuan():
     time.sleep(0.6)
     pydirectinput.press(['space','ctrl'])
     time.sleep(0.1)
-    run(2.18)
+    run(1.68)
 
      # 第一张图
     pydirectinput.press('a')
     time.sleep(0.7)
 
-    run(2.24)
+    run(1.64)
 
     # 第二张图
     # time.sleep(0.3)
     pydirectinput.press('a')
     time.sleep(1.2)
 
-    run(2.41)
+    run(1.81)
 
     pydirectinput.press('a')
     time.sleep(0.65)
