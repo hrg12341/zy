@@ -198,13 +198,13 @@ def nq():
     pydirectinput.press(['right', 'right', 'space'])
     time.sleep(0.6)
 
-    run(1.78)
+    run(1.68)
 
      # 第一张图
     pydirectinput.press('s')
     time.sleep(0.7)
 
-    run(1.84)
+    run(1.78)
 
     # 第二张图
     # time.sleep(0.3)
@@ -217,11 +217,12 @@ def nq():
     time.sleep(0.85)
     pydirectinput.press('g')
     time.sleep(0.5)
-
-    pydirectinput.press('y')
+    pydirectinput.press('alt')
+    time.sleep(0.4)
+    pydirectinput.press('t')
     # time.sleep(0.44)
     # pydirectinput.press(['e','r','w'])
-    time.sleep(8)
+    time.sleep(7)
 
 
     autow()
@@ -257,7 +258,7 @@ def zhaohuan():
     time.sleep(0.5)
     pydirectinput.press('q')
     time.sleep(0.2)
-    pydirectinput.press(['left','z'])
+    pydirectinput.press(['right','z'])
     time.sleep(0.8)
 
     pydirectinput.press(['ctrl','g'])
@@ -268,5 +269,37 @@ def zhaohuan():
 
     autow()
 
+def  fengfa():
+    # 上buff
+    pydirectinput.press(['right', 'right', 'space'])
+    time.sleep(0.6)
+
+    run(1.68)
+
+    # 第一张图
+    pydirectinput.press('s')
+    time.sleep(0.7)
+
+    run(1.78)
+
+    # 第二张图
+    # time.sleep(0.3)
+    pydirectinput.press('s')
+    time.sleep(1)
+
+    run(2.01)
+
+    pydirectinput.press('a')
+    time.sleep(0.85)
+    pydirectinput.press('g')
+    time.sleep(0.5)
+    pydirectinput.press('alt')
+    time.sleep(0.4)
+    pydirectinput.press('t')
+    # time.sleep(0.44)
+    # pydirectinput.press(['e','r','w'])
+    time.sleep(7)
+
+    autow()
 
 
