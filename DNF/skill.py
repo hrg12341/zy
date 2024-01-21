@@ -1,3 +1,5 @@
+import random
+
 import pydirectinput
 import time
 
@@ -264,42 +266,52 @@ def zhaohuan():
     pydirectinput.press(['ctrl','g'])
     # time.sleep(0.44)
     # pydirectinput.press(['e','r','w'])
-    time.sleep(9.8)
+    time.sleep(9.0)
 
 
     autow()
 
-def  fengfa():
+
+def fengfa():
     # 上buff
     pydirectinput.press(['right', 'right', 'space'])
     time.sleep(0.6)
 
-    run(1.68)
+    pydirectinput.press('g',2)
+
+    run(0.66)
 
     # 第一张图
     pydirectinput.press('s')
     time.sleep(0.7)
 
-    run(1.78)
+    pydirectinput.press('g')
+    run(1.28)
 
     # 第二张图
     # time.sleep(0.3)
-    pydirectinput.press('s')
+    pydirectinput.press('a')
     time.sleep(1)
 
-    run(2.01)
-
-    pydirectinput.press('a')
-    time.sleep(0.85)
+    run(1.15)
     pydirectinput.press('g')
-    time.sleep(0.5)
-    pydirectinput.press('alt')
-    time.sleep(0.4)
-    pydirectinput.press('t')
-    # time.sleep(0.44)
-    # pydirectinput.press(['e','r','w'])
-    time.sleep(7)
 
+    pydirectinput.press('q')
+    time.sleep(0.45)
+    pydirectinput.press('w')
+    time.sleep(1.49)
+    pydirectinput.press('r')
+    time.sleep(0.4)
+    pydirectinput.press('y')
+    time.sleep(3.44)
+    sk = ['a',['q','ctrl'],'d','alt','g','h']
+
+    for i in sk:
+        pydirectinput.press(i)
+        time.sleep(random.uniform(0.27, 0.40))
+
+    time.sleep(5)
+    #
     autow()
 
 

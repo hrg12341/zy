@@ -1,5 +1,5 @@
 import time
-from skill import ms,huahua,axl,lvren,naima,nq,zhaohuan
+from skill import *
 import math
 import sys
 
@@ -28,6 +28,8 @@ def  choseRole(type):
         return  "缪斯"
     elif (type == 5):
         return  "花花"
+    elif (type == 6):
+        return  "风法"
     elif (type == 7):
         return  "阿修罗"
     elif(type==8):
@@ -44,6 +46,8 @@ def shuatu(type):
         ms()
     elif (type == 5):
         huahua()
+    elif (type == 6):
+        fengfa()
     elif (type == 7):
         axl()
     elif (type == 8):

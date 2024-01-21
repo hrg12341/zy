@@ -9,8 +9,8 @@ import os
 # 7.阿修罗
 # 8.召唤
 
-type = 1
-pl = 188
+type = 6
+pl = 14
 
 def shenyuan():
     os.system("python shenyuan.py " + str(pl) + " " + str(type))
