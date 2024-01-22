@@ -94,6 +94,7 @@ def axl():
     # 上buff
     pydirectinput.press(['right', 'right', 'space'])
     pydirectinput.press(['up', 'up', 'space'])
+    time.sleep(0.3)
     pydirectinput.press('alt')
     pydirectinput.keyDown("down")
     time.sleep(0.2)
@@ -262,11 +263,13 @@ def zhaohuan():
     time.sleep(0.2)
     pydirectinput.press(['right','z'])
     time.sleep(0.8)
+    time.sleep(0.8)
 
-    pydirectinput.press(['ctrl','g'])
-    # time.sleep(0.44)
+    pydirectinput.press('ctrl')
+    time.sleep(0.44)
+    pydirectinput.press('y')
     # pydirectinput.press(['e','r','w'])
-    time.sleep(9.0)
+    time.sleep(6.0)
 
 
     autow()
@@ -285,13 +288,16 @@ def fengfa():
     pydirectinput.press('s')
     time.sleep(0.7)
 
-    pydirectinput.press('g')
-    run(1.28)
+    pydirectinput.press('g',2)
+
+    run(0.88)
 
     # 第二张图
     # time.sleep(0.3)
     pydirectinput.press('a')
-    time.sleep(1)
+    time.sleep(0.87)
+    pydirectinput.press('alt')
+    time.sleep(0.57)
 
     run(1.15)
     pydirectinput.press('g')
@@ -304,7 +310,7 @@ def fengfa():
     time.sleep(0.4)
     pydirectinput.press('y')
     time.sleep(3.44)
-    sk = ['a',['q','ctrl'],'d','alt','g','h']
+    sk = ['a',['q','ctrl'],'d','g','h']
 
     for i in sk:
         pydirectinput.press(i)
