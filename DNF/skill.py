@@ -157,7 +157,7 @@ def lvren():
     pydirectinput.press('q')
     time.sleep(0.4)
     pydirectinput.press('alt')
-    time.sleep(0.5)
+    time.sleep(0.35)
     pydirectinput.press('r')
 
     time.sleep(2.6)
@@ -182,7 +182,7 @@ def naima():
     pydirectinput.press('a')
     time.sleep(1)
 
-    run(1.86)
+    run(1.79)
     pydirectinput.press('s')
     time.sleep(0.85)
 
@@ -214,7 +214,7 @@ def nq():
     pydirectinput.press('s')
     time.sleep(1)
 
-    run(2.01)
+    run(1.95)
 
     pydirectinput.press('a')
     time.sleep(0.85)
