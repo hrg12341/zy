@@ -218,14 +218,14 @@ def nq():
 
     pydirectinput.press('a')
     time.sleep(0.85)
-    pydirectinput.press('g')
+    pydirectinput.press('s')
     time.sleep(0.5)
     pydirectinput.press('alt')
     time.sleep(0.4)
-    pydirectinput.press('t')
+    pydirectinput.press('y')
     # time.sleep(0.44)
     # pydirectinput.press(['e','r','w'])
-    time.sleep(7)
+    time.sleep(9)
 
 
     autow()
@@ -278,13 +278,15 @@ def zhaohuan():
 def fengfa():
     # 上buff
     pydirectinput.press(['right', 'right', 'space'])
-    time.sleep(0.6)
-
-    pydirectinput.press('g',2)
+    time.sleep(0.58)
+    pydirectinput.press('down')
+    pydirectinput.press('g',2,0.2)
 
     run(0.66)
 
     # 第一张图
+    pydirectinput.press('q')
+    time.sleep(0.58)
     pydirectinput.press('s')
     time.sleep(0.7)
 
