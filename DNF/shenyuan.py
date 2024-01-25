@@ -2,6 +2,7 @@ import time
 from skill import *
 import math
 import sys
+import pydirectinput
 
 def main():
     event()
@@ -14,6 +15,9 @@ def event():
     for i in range(count):
         print(name+"第"+str(i+1)+"次刷图")
         shuatu(type)
+        if(i!=count-1):
+            pydirectinput.press('f10')
+            time.sleep(2.9)
 
 
 

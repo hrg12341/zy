@@ -23,8 +23,7 @@ def autow():
     time.sleep(0.8)
     pydirectinput.press('esc')
     time.sleep(0.3)
-    pydirectinput.press('f10')
-    time.sleep(2.9)
+
 
 def ms():
     # 上buff
