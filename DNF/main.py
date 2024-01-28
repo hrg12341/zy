@@ -1,4 +1,8 @@
 import os
+import time
+# import cv2
+# import pyautogui
+# from skimage.metrics import structural_similarity as ssim
 
 # 1.女枪
 # 2.奶妈
@@ -9,8 +13,9 @@ import os
 # 7.阿修罗
 # 8.召唤
 
-type = 2
-pl = 92
+type = 7
+pl = 98
+tu = 1
 
 def shenyuan():
     os.system("python shenyuan.py " + str(pl) + " " + str(type))
@@ -18,5 +23,8 @@ def shenyuan():
 def fengbao():
     os.system("python fengbao.py " + str(pl) + " " + str(type))
 
-shenyuan()
-# fengbao()
+if __name__=="__main__":
+    if(tu == 1):
+        shenyuan()
+    else:
+        fengbao()
