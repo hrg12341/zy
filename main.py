@@ -4,6 +4,7 @@ import numpy as np
 import pyautogui
 import pytesseract
 from PIL import Image
+import easyocr
 # from skimage.metrics import structural_similarity as ssim
 
 # Press Shift+F10 to execute it or replace it with your code.
@@ -41,19 +42,27 @@ from PIL import Image
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-    # screenshot = pyautogui.screenshot("loc.png")
-    time.sleep(2)
-    screenshot = pyautogui.screenshot(region=(1480,305,295,35))
-    screenshot.save("screenshot.png")
+    # print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    # # screenshot = pyautogui.screenshot("loc.png")
+    # time.sleep(2)
+    # screenshot = pyautogui.screenshot(region=(1480,305,295,35))
+    # screenshot.save("screenshot.png")
+    #
+    #
+    # image1 = Image.open("DNF/png/loc.png").convert("L")
+    # image2 = Image.open("screenshot.png").convert("L")
+    #
+    # mse = np.square((np.array(image2)-np.array(image1)).mean())
+    #
+    # print(mse)
+    reader = easyocr.Reader(['ch_sim'])
+    now = time.time()
 
-
-    image1 = Image.open("DNF/png/loc.png").convert("L")
-    image2 = Image.open("screenshot.png").convert("L")
-
-    mse = np.square((np.array(image2)-np.array(image1)).mean())
-
-    print(mse)
+    # result = reader.readtext("DNF/png/loc.png",detail=0)
+    result = reader.readtext("screenshot.png",detail=0)
+    print(result)
+    print("取的物"in (str)(result))
+    print(time.time()-now)
 
 
 

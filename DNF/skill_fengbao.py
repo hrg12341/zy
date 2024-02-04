@@ -3,7 +3,9 @@ import pyautogui
 import cv2
 import pydirectinput
 import time
-from skimage.metrics import structural_similarity as ssim
+import easyocr
+reader = easyocr.Reader(['ch_sim'])
+textValue = "取的物"
 
 
 def run(t):
@@ -30,24 +32,33 @@ def autow(second):
 
 def listener():
     screenshot = pyautogui.screenshot(region=(1480, 305, 295, 35))
-    screenshot.save("png/compare.png")
-    image1 = cv2.cvtColor(cv2.imread("png/loc.png"), cv2.COLOR_BGR2GRAY)
-    image2 = cv2.cvtColor(cv2.imread("png/compare.png"), cv2.COLOR_BGR2GRAY)
+    screenshot.save("png/image.png")
+    result = (str)(reader.readtext("png/image.png", detail=0))
 
-    ssim_value = ssim(image1, image2)
-    threshold = 0.79
-
-    if(ssim_value>threshold):
-        print("ssim:" + str(ssim_value))
+    if(textValue in result):
         time.sleep(3)
 
     time.sleep(0.28)
 
+
+def chooseDown(type):
+    if(type==1):
+        pydirectinput.keyDown('down')
+        time.sleep(0.25)
+        pydirectinput.keyUp("down")
+    elif(type==2):
+        pydirectinput.press('down',2,0.08)
+    elif(type==3):
+        # pydirectinput.press('down')
+        pydirectinput.press('up')
+    elif(type==4):
+        pydirectinput.press('down',2,0.09)
+
 def ms():
     # 上buff
-    pydirectinput.press(['right','right','space'])
-    pydirectinput.press(['up','up','space'])
-    time.sleep(0.2)
+    # pydirectinput.press(['right','right','space'])
+    # pydirectinput.press(['up','up','space'])
+    # time.sleep(0.2)
     pydirectinput.press('down',2,0.1)
 
     run(1.7)
@@ -55,17 +66,20 @@ def ms():
     # 第一张图
     pydirectinput.press(['ctrl','a'])
     time.sleep(0.6)
-    pydirectinput.press('down')
+    # pydirectinput.press('down')
+    chooseDown(1)
+    time.sleep(0.2)
     run(0.94)
     listener()
 
 
     #第二张图
-    run(0.88)
-    pydirectinput.press('down')
+    time.sleep(0.2)
+    run(0.98)
+    chooseDown(2)
 
     pydirectinput.press(['ctrl','s'])
-    time.sleep(1.6)
+    time.sleep(1.5)
 
 
     run(0.98)
@@ -74,24 +88,30 @@ def ms():
 
     #第三张图
     # print("第三张图")
+    time.sleep(0.2)
     run(0.6)
     pydirectinput.press(['alt','s'])
     time.sleep(1.23)
+    chooseDown(3)
     # pydirectinput.press('down')
 
     run(1.55)
+    listener()
 
     #第四张图
     # print("第四张图")
+    time.sleep(0.2)
     run(0.7)
     pydirectinput.press(['ctrl','a'])
     time.sleep(1.6)
-    pydirectinput.press('down')
+    chooseDown(4)
 
     run(1.05)
     listener()
     #Boss
     run(random.uniform(0.5,0.88))
+    pydirectinput.press('w')
+    time.sleep(0.3)
     pydirectinput.press('s')
 
     time.sleep(3)

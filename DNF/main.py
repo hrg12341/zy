@@ -1,8 +1,8 @@
 import os
 import time
-# import cv2
-# import pyautogui
-# from skimage.metrics import structural_similarity as ssim
+import cv2
+import pyautogui
+from skimage.metrics import structural_similarity as ssim
 
 # 1.女枪
 # 2.奶妈
@@ -13,9 +13,9 @@ import time
 # 7.阿修罗
 # 8.召唤
 
-type = 7
-pl = 98
-tu = 1
+type = 4
+pl = 152
+tu = 2
 
 def shenyuan():
     os.system("python shenyuan.py " + str(pl) + " " + str(type))
@@ -28,3 +28,8 @@ if __name__=="__main__":
         shenyuan()
     else:
         fengbao()
+    # image1 = cv2.cvtColor(cv2.imread("png/loc.png"), cv2.COLOR_BGR2GRAY)
+    # image2 = cv2.cvtColor(cv2.imread("png/compare.png"), cv2.COLOR_BGR2GRAY)
+    #
+    # ssim_value = ssim(image1, image2)
+    # print(ssim_value)
