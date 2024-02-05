@@ -42,6 +42,8 @@ def  choseRole(type):
         return "阿修罗"
     elif(type==8):
         return "召唤"
+    elif (type == 9):
+        return "帕拉丁"
 
 def shuatu(type):
     if (type == 1):
@@ -60,6 +62,8 @@ def shuatu(type):
         axl()
     elif (type == 8):
        zhaohuan()
+    elif(type == 9):
+        pld()
 
 def run(t):
     pydirectinput.press('right')

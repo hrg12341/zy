@@ -41,18 +41,16 @@ def listener():
     time.sleep(0.28)
 
 
-def chooseDown(type):
+def chooseDown(type ,t):
     if(type==1):
-        pydirectinput.keyDown('down')
-        time.sleep(0.25)
-        pydirectinput.keyUp("down")
+        pydirectinput.press('down',t,0.08)
     elif(type==2):
-        pydirectinput.press('down',2,0.08)
+        pydirectinput.press('down',t,0.08)
     elif(type==3):
-        # pydirectinput.press('down')
-        pydirectinput.press('up')
+        # pydirectinput.press('down',t,0.08)
+        pydirectinput.press('up',t,0.08)
     elif(type==4):
-        pydirectinput.press('down',2,0.09)
+        pydirectinput.press('down',t,0.09)
 
 def ms():
     # 上buff
@@ -395,4 +393,68 @@ def fengfa():
     pydirectinput.press('r')
     time.sleep(1.22)
     autow(3)
+
+def pld():
+    # 上buff
+    pydirectinput.press(['right','right','space'])
+    pydirectinput.press('down')
+
+    run(1.4)
+
+    # 第一张图
+    pydirectinput.press('space')
+    time.sleep(0.3)
+    pydirectinput.press('ctrl')
+    time.sleep(0.4)
+    # pydirectinput.press('down')
+    chooseDown(1,2)
+    time.sleep(0.2)
+    run(0.94)
+    listener()
+
+    # 第二张图
+    time.sleep(0.2)
+    run(0.68)
+    chooseDown(2,1)
+
+    pydirectinput.press('q')
+    time.sleep(0.88)
+
+    run(0.98)
+    listener()
+
+    # 第三张图
+    # print("第三张图")
+    time.sleep(0.2)
+    run(0.6)
+    pydirectinput.press(['f'])
+    time.sleep(0.23)
+
+    # chooseDown(3)
+    # pydirectinput.press('down')
+
+    run(1.15)
+    listener()
+
+    # 第四张图
+    # print("第四张图")
+    time.sleep(0.2)
+    run(0.6)
+    pydirectinput.press('h')
+    time.sleep(2.4)
+    chooseDown(4,2)
+
+    run(0.85)
+    listener()
+    # Boss
+    run(random.uniform(0.25, 0.42))
+    pydirectinput.press('r')
+    time.sleep(1.3)
+    pydirectinput.press('d')
+    time.sleep(0.5)
+    pydirectinput.press('s')
+
+    time.sleep(3)
+
+    autow(2.44)
 
