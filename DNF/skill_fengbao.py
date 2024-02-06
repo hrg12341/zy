@@ -362,37 +362,51 @@ def fengfa():
 
     # 第一张图
     pydirectinput.press('alt')
+    chooseDown(1, 1)
+    run(1.06)
 
-    run(2.318)
-    pydirectinput.press('down')
+    listener()
+
     # 第二张图
-
+    run(0.818)
     pydirectinput.press('s')
     time.sleep(1.2)
     pydirectinput.press('g')
+    chooseDown(2,1)
+    run(0.66)
+    listener()
 
-
-    run(1.47)
+    # 第三张图
+    run(0.77)
     pydirectinput.press('ctrl')
     pydirectinput.press('g')
+    run(0.8)
+    listener()
 
     # 第四张图
-    run(1.68)
+    run(0.6)
+    chooseDown(4, 2)
+    time.sleep(0.09)
     pydirectinput.press('q')
     time.sleep(0.47)
+
     pydirectinput.press('g')
-    pydirectinput.press('down')
+
+    # pydirectinput.press('down')
+
     time.sleep(0.08)
+    run(0.68)
+    listener()
 
     #Boss
-    run(1.7)
+    run(0.7)
 
     pydirectinput.press('g')
     pydirectinput.press('y')
-    time.sleep(5)
-    pydirectinput.press('r')
-    time.sleep(1.22)
-    autow(3)
+    time.sleep(5.56)
+    pydirectinput.press('alt')
+    time.sleep(0.32)
+    autow(2.45)
 
 def pld():
     # 上buff

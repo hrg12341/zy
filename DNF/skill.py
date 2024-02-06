@@ -110,6 +110,8 @@ def axl():
     # time.sleep(0.3)
     pydirectinput.press('e')
     time.sleep(1)
+    pydirectinput.press('e')
+    time.sleep(0.2)
 
     run(1.9)
 

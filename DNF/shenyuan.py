@@ -62,5 +62,5 @@ if __name__ == "__main__":
     pl = int(sys.argv[1])
     type = int(sys.argv[2])
     print(pl)
-    count = math.ceil(pl / 6)
+    count = math.ceil(pl / 8)
     main()

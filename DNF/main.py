@@ -14,7 +14,7 @@ from skimage.metrics import structural_similarity as ssim
 # 8.召唤
 # 9.帕拉丁
 
-type = 8
+type = 1
 pl = 188
 tu = 1
 
