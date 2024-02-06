@@ -14,9 +14,9 @@ from skimage.metrics import structural_similarity as ssim
 # 8.召唤
 # 9.帕拉丁
 
-type = 1
-pl = 188
-tu = 1
+type = 3
+pl = 50
+tu = 2
 
 def shenyuan():
     os.system("python shenyuan.py " + str(pl) + " " + str(type))

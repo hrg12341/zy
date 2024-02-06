@@ -195,33 +195,48 @@ def lvren():
     pydirectinput.press(['right', 'right', 'space'])
     time.sleep(0.6)
 
-    run(1.3)
+    run(1.2)
     # 第一张图
-    pydirectinput.press('g')
+    pydirectinput.press('s')
     time.sleep(0.7)
+    chooseDown(1,2)
+    run(0.99)
+    listener()
 
-    run(1.36)
     # 第二张图
     # time.sleep(0.3)
+    run(0.15)
+    pydirectinput.press('down',2,0.09)
+
     pydirectinput.press('f')
     time.sleep(0.5)
+    pydirectinput.press('up',2,0.08)
+    time.sleep(0.1)
+    run(1.42)
+    listener()
 
-    run(1.56)
+    # 第三张图
+    run(0.28)
+    pydirectinput.press('g')
+    time.sleep(0.64)
+    run(1.38)
+    listener()
 
-    pydirectinput.press('s')
-    time.sleep(0.84)
-    # pydirectinput.press(['right','space'])
-    # time.sleep(0.5)
+    #第四张图
+    run(0.4)
+    pydirectinput.press("w")
+    time.sleep(0.45)
+    chooseDown(4,2)
+    run(1.11)
+    listener()
 
-    pydirectinput.press('q')
-    time.sleep(0.4)
-    pydirectinput.press('alt')
-    time.sleep(0.35)
+    #Boss
+    run(0.52)
     pydirectinput.press('r')
 
-    time.sleep(2.6)
+    time.sleep(1.96)
 
-    autow()
+    autow(2.43)
 
 
 def naima():
@@ -362,7 +377,7 @@ def fengfa():
 
     # 第一张图
     pydirectinput.press('alt')
-    chooseDown(1, 1)
+    chooseDown(1, 2)
     run(1.06)
 
     listener()
@@ -372,7 +387,7 @@ def fengfa():
     pydirectinput.press('s')
     time.sleep(1.2)
     pydirectinput.press('g')
-    chooseDown(2,1)
+    # chooseDown(2,1)
     run(0.66)
     listener()
 
@@ -385,7 +400,7 @@ def fengfa():
 
     # 第四张图
     run(0.6)
-    chooseDown(4, 2)
+    chooseDown(4, 3)
     time.sleep(0.09)
     pydirectinput.press('q')
     time.sleep(0.47)
@@ -468,7 +483,7 @@ def pld():
     time.sleep(0.5)
     pydirectinput.press('s')
 
-    time.sleep(3)
+    time.sleep(1)
 
     autow(2.44)
 
