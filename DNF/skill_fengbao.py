@@ -7,6 +7,14 @@ import easyocr
 reader = easyocr.Reader(['ch_sim'])
 textValue = "取的物"
 
+location = [
+    ['down', 2],     #第一张
+    ['down', 1],     #第二张
+    ['down', 0],     #第三张
+    ['down', 0],     #第四张
+    ['down', 3]      #第五张
+]
+
 
 def run(t):
     pydirectinput.press('right')
@@ -41,23 +49,17 @@ def listener():
     time.sleep(0.28)
 
 
-def chooseDown(type ,t):
-    if(type==1):
-        pydirectinput.press('down',t,0.08)
-    elif(type==2):
-        pydirectinput.press('down',t,0.08)
-    elif(type==3):
-        # pydirectinput.press('down',t,0.08)
-        pydirectinput.press('up',t,0.08)
-    elif(type==4):
-        pydirectinput.press('down',t,0.09)
+def chooseDown(arr):
+    pydirectinput.press(arr[0], arr[1], random.uniform(0.08, 0.11))
+    time.sleep(0.1)
+
 
 def ms():
     # 上buff
     # pydirectinput.press(['right','right','space'])
     # pydirectinput.press(['up','up','space'])
     # time.sleep(0.2)
-    pydirectinput.press('down',2,0.1)
+    chooseDown(location[0])
 
     run(1.7)
 
@@ -65,7 +67,7 @@ def ms():
     pydirectinput.press(['ctrl','a'])
     time.sleep(0.6)
     # pydirectinput.press('down')
-    chooseDown(1)
+    chooseDown(location[1])
     time.sleep(0.2)
     run(0.94)
     listener()
@@ -74,7 +76,7 @@ def ms():
     #第二张图
     time.sleep(0.2)
     run(0.98)
-    chooseDown(2)
+    chooseDown(location[2])
 
     pydirectinput.press(['ctrl','s'])
     time.sleep(1.5)
@@ -90,8 +92,7 @@ def ms():
     run(0.6)
     pydirectinput.press(['alt','s'])
     time.sleep(1.23)
-    chooseDown(3)
-    # pydirectinput.press('down')
+    chooseDown(location[3])
 
     run(1.55)
     listener()
@@ -102,7 +103,7 @@ def ms():
     run(0.7)
     pydirectinput.press(['ctrl','a'])
     time.sleep(1.6)
-    chooseDown(4)
+    chooseDown(location[4])
 
     run(1.05)
     listener()
@@ -199,15 +200,15 @@ def lvren():
     # 第一张图
     pydirectinput.press('s')
     time.sleep(0.7)
-    chooseDown(1,2)
+    chooseDown(location[1])
     run(0.99)
     listener()
 
     # 第二张图
     # time.sleep(0.3)
     run(0.15)
-    pydirectinput.press('down',2,0.09)
-
+    chooseDown(location[2])
+    pydirectinput.press('down', 2, 0.08)
     pydirectinput.press('f')
     time.sleep(0.5)
     pydirectinput.press('up',2,0.08)
@@ -219,15 +220,17 @@ def lvren():
     run(0.28)
     pydirectinput.press('g')
     time.sleep(0.64)
+    chooseDown(location[3])
     run(1.38)
     listener()
 
     #第四张图
-    run(0.4)
+    run(0.45)
+    time.sleep(0.1)
+    chooseDown(location[4])
     pydirectinput.press("w")
     time.sleep(0.45)
-    chooseDown(4,2)
-    run(1.11)
+    run(1.06)
     listener()
 
     #Boss
@@ -242,32 +245,53 @@ def lvren():
 def naima():
     # 上buff
     pydirectinput.press(['right', 'right', 'space'])
-    pydirectinput.press(['up', 'up', 'space','down','down'])
+    # pydirectinput.press(['up', 'up', 'space','down','qdown'])
     time.sleep(0.6)
 
     run(1.37)
     # 第一张图
     pydirectinput.press('a')
     time.sleep(0.7)
+    chooseDown(location[1])
+    run(0.85)
+    listener()
 
-    run(1.44)
     # 第二张图
+    run(0.34)
     # time.sleep(0.3)
     pydirectinput.press('a')
     time.sleep(1)
+    chooseDown(location[2])
+    run(1.21)
+    listener()
 
-    run(1.79)
-    pydirectinput.press('s')
-    time.sleep(0.85)
+    #第三张图
+    run(0.46)
+    pydirectinput.press('q')
+    time.sleep(0.45)
+    chooseDown(location[3])
+    run(1.13)
+    listener()
 
+    #第四张图
+    run(0.25)
+    time.sleep(0.1)
+    chooseDown(location[4])
+    pydirectinput.press("t")
+    time.sleep(0.45)
+    run(1.16)
+    listener()
+
+    #Boss
+    run(0.35)
     pydirectinput.press('d')
     time.sleep(0.44)
-    pydirectinput.press(['e','r','w'])
+    pydirectinput.press(['s'])
     time.sleep(1)
     # pydirectinput.press('q')
-    time.sleep(3.6)
+    time.sleep(1.6)
 
-    autow()
+    autow(2.41)
 
 
 def nq():
@@ -307,6 +331,8 @@ def nq():
 
 def zhaohuan():
     # 上buff
+    chooseDown(location[0])
+    time.sleep(0.1)
 
     pydirectinput.press(['right', 'space'])
     time.sleep(1.3)
@@ -314,29 +340,32 @@ def zhaohuan():
     time.sleep(0.6)
     pydirectinput.press(['space','ctrl'])
     time.sleep(0.1)
-    run(1.58)
+    run(1.78)
 
      # 第一张图
     pydirectinput.press('a')
     time.sleep(0.33)
-    pydirectinput.press('down')
+    chooseDown(location[1])
 
-    run(1.04)
+    run(0.84)
     listener()
 
     # 第二张图
-    run(1.32)
-
+    chooseDown(location[2])
+    time.sleep(0.1)
+    run(1.41)
+    pydirectinput.press('ctrl')
     time.sleep(0.34)
-    pydirectinput.press('down',3,0.08)
+
     pydirectinput.press('a')
-    run(0.49)
+    run(0.37)
     listener()
 
 
     #第三张图
     run(0.83)
     time.sleep(0.23)
+    chooseDown(location[3])
     pydirectinput.press('a')
     time.sleep(0.41)
 
@@ -348,7 +377,7 @@ def zhaohuan():
     pydirectinput.press('a')
     time.sleep(0.36)
 
-    pydirectinput.press('down')
+    chooseDown(location[4])
 
     run(1.31)
     listener()
@@ -362,7 +391,7 @@ def zhaohuan():
     pydirectinput.press('r')
     time.sleep(3)
 
-    autow(2.9)
+    autow(2.52)
 
 
 
@@ -377,30 +406,32 @@ def fengfa():
 
     # 第一张图
     pydirectinput.press('alt')
-    chooseDown(1, 2)
+    chooseDown(location[1])
     run(1.06)
 
     listener()
 
     # 第二张图
-    run(0.818)
+    run(0.618)
     pydirectinput.press('s')
     time.sleep(1.2)
     pydirectinput.press('g')
-    # chooseDown(2,1)
-    run(0.66)
+    chooseDown(location[2])
+    run(0.86)
     listener()
 
     # 第三张图
-    run(0.77)
+    run(0.57)
     pydirectinput.press('ctrl')
     pydirectinput.press('g')
-    run(0.8)
+    time.sleep(0.07)
+    chooseDown(location[3])
+    run(0.98)
     listener()
 
     # 第四张图
     run(0.6)
-    chooseDown(4, 3)
+    chooseDown(location[4])
     time.sleep(0.09)
     pydirectinput.press('q')
     time.sleep(0.47)
@@ -425,6 +456,8 @@ def fengfa():
 
 def pld():
     # 上buff
+    chooseDown(location[0])
+    time.sleep(0.1)
     pydirectinput.press(['right','right','space'])
     pydirectinput.press('down')
 
@@ -436,7 +469,7 @@ def pld():
     pydirectinput.press('ctrl')
     time.sleep(0.4)
     # pydirectinput.press('down')
-    chooseDown(1,2)
+    chooseDown(location[1])
     time.sleep(0.2)
     run(0.94)
     listener()
@@ -444,7 +477,7 @@ def pld():
     # 第二张图
     time.sleep(0.2)
     run(0.68)
-    chooseDown(2,1)
+    chooseDown(location[2])
 
     pydirectinput.press('q')
     time.sleep(0.88)
@@ -454,12 +487,15 @@ def pld():
 
     # 第三张图
     # print("第三张图")
+
     time.sleep(0.2)
+    chooseDown(location[3])
+    time.sleep(0.1)
     run(0.6)
     pydirectinput.press(['f'])
     time.sleep(0.23)
 
-    # chooseDown(3)
+
     # pydirectinput.press('down')
 
     run(1.15)
@@ -471,7 +507,7 @@ def pld():
     run(0.6)
     pydirectinput.press('h')
     time.sleep(2.4)
-    chooseDown(4,2)
+    chooseDown(location[4])
 
     run(0.85)
     listener()

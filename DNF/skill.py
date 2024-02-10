@@ -42,7 +42,7 @@ def ms():
     pydirectinput.press(['ctrl','s'])
     time.sleep(1.6)
 
-    run(1.55)
+    run(1.315)
 
     # time.sleep(0.3)
 
@@ -184,8 +184,7 @@ def naima():
     time.sleep(1)
 
     run(1.79)
-    pydirectinput.press('s')
-    time.sleep(0.85)
+    time.sleep(0.56)
 
     pydirectinput.press('d')
     time.sleep(0.44)
@@ -263,8 +262,7 @@ def zhaohuan():
     pydirectinput.press('q')
     time.sleep(0.2)
     pydirectinput.press(['right','z'])
-    time.sleep(0.8)
-    time.sleep(0.8)
+    time.sleep(0.67)
 
     pydirectinput.press('ctrl')
     time.sleep(0.44)
