@@ -8,11 +8,11 @@ reader = easyocr.Reader(['ch_sim'])
 textValue = "取的物"
 
 location = [
-    ['down', 2],     #第一张
-    ['down', 1],     #第二张
-    ['down', 0],     #第三张
+    ['down', 0],     #第一张
+    ['down', 2],     #第二张
+    ['down', 1],     #第三张
     ['down', 0],     #第四张
-    ['down', 3]      #第五张
+    ['down', 1]      #第五张
 ]
 
 
@@ -56,7 +56,7 @@ def chooseDown(arr):
 
 def ms():
     # 上buff
-    # pydirectinput.press(['right','right','space'])
+    pydirectinput.press(['right','right','space'])
     # pydirectinput.press(['up','up','space'])
     # time.sleep(0.2)
     chooseDown(location[0])
@@ -69,13 +69,13 @@ def ms():
     # pydirectinput.press('down')
     chooseDown(location[1])
     time.sleep(0.2)
-    run(0.94)
+    run(0.76)
     listener()
 
 
     #第二张图
     time.sleep(0.2)
-    run(0.98)
+    run(0.72)
     chooseDown(location[2])
 
     pydirectinput.press(['ctrl','s'])
@@ -94,7 +94,7 @@ def ms():
     time.sleep(1.23)
     chooseDown(location[3])
 
-    run(1.55)
+    run(1.17)
     listener()
 
     #第四张图
@@ -102,18 +102,19 @@ def ms():
     time.sleep(0.2)
     run(0.7)
     pydirectinput.press(['ctrl','a'])
-    time.sleep(1.6)
+    time.sleep(1.3)
     chooseDown(location[4])
 
     run(1.05)
     listener()
     #Boss
-    run(random.uniform(0.5,0.88))
+
+    run(random.uniform(0.5,0.72))
     pydirectinput.press('w')
     time.sleep(0.3)
     pydirectinput.press('s')
 
-    time.sleep(3)
+    time.sleep(2.6)
 
     autow(2.44)
 
@@ -296,37 +297,56 @@ def naima():
 
 def nq():
     # 上buff
+    chooseDown(location[0])
     pydirectinput.press(['right', 'right', 'space'])
     time.sleep(0.6)
 
-    run(1.68)
+    run(1.18)
 
      # 第一张图
+    chooseDown(location[1])
     pydirectinput.press('s')
     time.sleep(0.7)
 
-    run(1.78)
+    run(1.38)
+    listener()
 
     # 第二张图
-    # time.sleep(0.3)
-    pydirectinput.press('s')
-    time.sleep(1)
+    chooseDown(location[2])
+    run(0.34)
+    pydirectinput.press('e')
+    time.sleep(0.88)
+    run(0.7)
+    # pydirectinput.press('alt')
+    # time.sleep(0.23)
+    run(0.72)
+    listener()
 
-    run(1.95)
-
+    #第三张图
+    chooseDown(location[3])
+    run(0.31)
     pydirectinput.press('a')
     time.sleep(0.85)
+    run(1.51)
+    listener()
+    #第四张图
+    chooseDown(location[4])
+    run(0.28)
     pydirectinput.press('s')
-    time.sleep(0.5)
-    pydirectinput.press('alt')
-    time.sleep(0.4)
-    pydirectinput.press('y')
-    # time.sleep(0.44)
-    # pydirectinput.press(['e','r','w'])
-    time.sleep(9)
+    time.sleep(0.8)
+    run(1.5)
+    listener()
+
+    #Boss
+    run(random.uniform(0.3,0.52))
+    pydirectinput.press('r')
+    time.sleep(0.89)
+    pydirectinput.press('s')
+    time.sleep(0.71)
+    time.sleep(1.1)
 
 
-    autow()
+    autow(2.1)
 
 
 def zhaohuan():
@@ -356,7 +376,7 @@ def zhaohuan():
     run(1.41)
     pydirectinput.press('ctrl')
     time.sleep(0.34)
-
+    
     pydirectinput.press('a')
     run(0.37)
     listener()
