@@ -1,19 +1,14 @@
 import random
 import pyautogui
 import cv2
+import main
 import pydirectinput
 import time
 import easyocr
 reader = easyocr.Reader(['ch_sim'])
 textValue = "取的物"
 
-location = [
-    ['down', 0],     #第一张
-    ['down', 2],     #第二张
-    ['down', 1],     #第三张
-    ['down', 0],     #第四张
-    ['down', 1]      #第五张
-]
+location = main.location
 
 
 def run(t):
@@ -50,7 +45,9 @@ def listener():
 
 
 def chooseDown(arr):
-    pydirectinput.press(arr[0], arr[1], random.uniform(0.08, 0.11))
+    ty = 'down'
+    if(arr < 0): ty = 'up'
+    pydirectinput.press(ty, arr, random.uniform(0.08, 0.11))
     time.sleep(0.1)
 
 
@@ -308,18 +305,18 @@ def nq():
     pydirectinput.press('s')
     time.sleep(0.7)
 
-    run(1.38)
+    run(1.54)
     listener()
 
     # 第二张图
     chooseDown(location[2])
-    run(0.34)
-    pydirectinput.press('e')
-    time.sleep(0.88)
-    run(0.7)
-    # pydirectinput.press('alt')
-    # time.sleep(0.23)
-    run(0.72)
+    run(0.38)
+    pydirectinput.press(['d','q'])
+    time.sleep(1.88)
+    run(0.43+0.9)
+    # pydirectinput.press('s')
+    # time.sleep(0.6)
+    # run(0.91)
     listener()
 
     #第三张图
@@ -327,8 +324,9 @@ def nq():
     run(0.31)
     pydirectinput.press('a')
     time.sleep(0.85)
-    run(1.51)
+    run(1.53)
     listener()
+
     #第四张图
     chooseDown(location[4])
     run(0.28)
@@ -433,10 +431,10 @@ def fengfa():
 
     # 第二张图
     run(0.618)
+    chooseDown(location[2])
     pydirectinput.press('s')
     time.sleep(1.2)
     pydirectinput.press('g')
-    chooseDown(location[2])
     run(0.86)
     listener()
 

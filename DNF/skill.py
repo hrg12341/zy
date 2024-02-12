@@ -184,7 +184,7 @@ def naima():
     time.sleep(1)
 
     run(1.79)
-    time.sleep(0.56)
+    time.sleep(0.12)
 
     pydirectinput.press('d')
     time.sleep(0.44)
@@ -318,7 +318,42 @@ def fengfa():
         time.sleep(random.uniform(0.27, 0.40))
 
     time.sleep(5)
-    #
     autow()
 
+def pld():
+    # 上buff
+    pydirectinput.press(['right', 'right', 'space'])
+    time.sleep(0.6)
 
+    run(1.6)
+    # 第一张图
+    pydirectinput.press('q')
+    time.sleep(0.7)
+
+    run(1.26)
+    # 第二张图
+    # time.sleep(0.3)
+    pydirectinput.press('d')
+    time.sleep(0.5)
+
+    run(0.97)
+
+    pydirectinput.press(['space'])
+    time.sleep(0.4)
+    pydirectinput.press('h')
+    time.sleep(2.25)
+    run(0.28)
+    pydirectinput.press('left')
+
+
+    pydirectinput.press('f')
+    time.sleep(0.4)
+    pydirectinput.press('r')
+    time.sleep(1.35)
+    pydirectinput.press('w')
+    time.sleep(0.3)
+    pydirectinput.press('e')
+
+    time.sleep(2.6)
+
+    autow()
