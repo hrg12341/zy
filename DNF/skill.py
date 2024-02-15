@@ -50,7 +50,7 @@ def ms():
     pydirectinput.press('a')
     time.sleep(0.8)
     pydirectinput.press('f')
-    time.sleep(0.7)
+    time.sleep(0.78)
     pydirectinput.press('h')
     time.sleep(5)
 

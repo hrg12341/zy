@@ -2,7 +2,7 @@
 import time
 import numpy as np
 import pyautogui
-import pytesseract
+# import pytesseract
 from PIL import Image
 import easyocr
 # from skimage.metrics import structural_similarity as ssim
@@ -45,7 +45,7 @@ def print_hi(name):
     # print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
     # # screenshot = pyautogui.screenshot("loc.png")
     # time.sleep(2)
-    # screenshot = pyautogui.screenshot(region=(1480,305,295,35))
+    # screenshot = pyautogui.screenshot(region=(1900,305,295,35))
     # screenshot.save("screenshot.png")
     #
     #

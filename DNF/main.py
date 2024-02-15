@@ -14,8 +14,8 @@ from skimage.metrics import structural_similarity as ssim
 # 8.召唤
 # 9.帕拉t丁
 
-type = 9
-pl = 36
+type = 2
+pl = 32
 tu = 1
 
 location = [
@@ -25,6 +25,8 @@ location = [
     0,     #第四张
     3      #第五张
 ]
+# computer = pyautogui.screenshot(region=(1480, 305, 295, 35))
+computer = pyautogui.screenshot(region=(1900, 305, 295, 35))
 
 def shenyuan():
     os.system("python shenyuan.py " + str(pl) + " " + str(type))

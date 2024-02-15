@@ -8,6 +8,7 @@ import easyocr
 reader = easyocr.Reader(['ch_sim'])
 textValue = "取的物"
 
+computer = main.computer
 location = main.location
 
 
@@ -34,7 +35,7 @@ def autow(second):
     time.sleep(0.3)
 
 def listener():
-    screenshot = pyautogui.screenshot(region=(1480, 305, 295, 35))
+    screenshot = computer
     screenshot.save("png/image.png")
     result = (str)(reader.readtext("png/image.png", detail=0))
 
