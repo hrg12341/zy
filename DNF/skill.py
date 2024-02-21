@@ -353,7 +353,11 @@ def pld():
     pydirectinput.press('w')
     time.sleep(0.3)
     pydirectinput.press('e')
+    time.sleep(0.8)
+    pydirectinput.press("ctrl")
+    time.sleep(0.31)
+    pydirectinput.press("s")
 
-    time.sleep(2.6)
+    time.sleep(3.6)
 
     autow()

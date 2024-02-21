@@ -441,8 +441,11 @@ def fengfa():
     pydirectinput.press('s')
     time.sleep(1.2)
     pydirectinput.press('g')
+    time.sleep(0.1)
+    pydirectinput.press('q')
+    time.sleep(0.1)
     pydirectinput.press("8")
-    run(0.86)
+    run(0.46)
     listener()
 
     # 第三张图
@@ -504,13 +507,13 @@ def pld():
 
     # 第二张图
     time.sleep(0.2)
-    run(0.68)
+    run(0.72)
     chooseDown(location[2])
 
-    pydirectinput.press('q')
-    time.sleep(0.88)
+    pydirectinput.press('f')
+    time.sleep(0.48)
     pydirectinput.press("8")
-    run(0.98)
+    run(0.94)
     listener()
 
     # 第三张图
@@ -520,8 +523,8 @@ def pld():
     chooseDown(location[3])
     time.sleep(0.1)
     run(0.6)
-    pydirectinput.press(['f'])
-    time.sleep(0.23)
+    pydirectinput.press(['q'])
+    time.sleep(0.83)
     pydirectinput.press("8")
 
     # pydirectinput.press('down')
