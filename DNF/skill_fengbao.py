@@ -560,3 +560,73 @@ def pld():
     time.sleep(1)
 
     autow(2.44)
+
+
+def ndy():
+    # 女弹药
+    # 上buff
+    # chooseDown(location[0])
+    pydirectinput.press(['right', 'right', 'space', 'right'])
+    time.sleep(0.38)
+    # pydirectinput.press('down')
+    # pydirectinput.press('g')
+
+    run(1.73)
+
+    # 第一张图
+    pydirectinput.press('a')
+    chooseDown(location[1])
+
+    pydirectinput.keyDown('right')
+    time.sleep(0.22)
+    pydirectinput.press('c',2,random.uniform(0.57,0.71))
+    time.sleep(0.36)
+    pydirectinput.keyUp('right')
+    # run(1.76)
+    listener()
+
+    # 第二张图
+    chooseDown(location[2])
+    run(0.538)
+    pydirectinput.press(['c','d'])
+    time.sleep(1.2)
+    # run(1.81)
+    pydirectinput.keyDown('right')
+    time.sleep(0.22)
+    pydirectinput.press('c',2,random.uniform(0.57,0.72))
+    time.sleep(0.34)
+    pydirectinput.keyUp('right')
+    listener()
+
+    # 第三张图
+    chooseDown(location[3])
+    run(0.66)
+    pydirectinput.press('e')
+    time.sleep(0.67)
+    # run(1.78)
+    pydirectinput.keyDown('right')
+    time.sleep(0.22)
+    pydirectinput.press('c',2,random.uniform(0.57,0.72))
+    time.sleep(0.41)
+    pydirectinput.keyUp('right')
+    listener()
+
+    # 第四张图
+    chooseDown(location[4])
+    run(0.69)
+    time.sleep(0.09)
+    pydirectinput.press('a')
+    time.sleep(0.47)
+    # run(1.74)
+    pydirectinput.keyDown('right')
+    time.sleep(0.22)
+    pydirectinput.press('c',2,random.uniform(0.57,0.72))
+    time.sleep(0.4)
+    pydirectinput.keyUp('right')
+    listener()
+
+    # Boss
+    run(random.uniform(0.35,0.7))
+    pydirectinput.press('h')
+    time.sleep(7.56)
+    autow(2.25)
