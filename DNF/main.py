@@ -14,16 +14,16 @@ from skimage.metrics import structural_similarity as ssim
 # 8.召唤
 # 9.帕拉丁
 
-type = 2
-pl = 50
-tu = 1
+type = 4
+pl = 161
+tu = 2
 
 location = [
-    2,     #第一张
-    2,     #第二张
-    -1,    #第三张
-    0,     #第四张
-    3     #第五张
+    3,     #第一张
+    1,     #第二张
+    0,    #第三张
+    -1,     #第四张
+    3    #第五张
 ]
 # computerlo = 1480
 computerlo = 1900

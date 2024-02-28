@@ -342,12 +342,11 @@ def pld():
     time.sleep(0.4)
     pydirectinput.press('h')
     time.sleep(2.25)
+    pydirectinput.press('f')
+    time.sleep(0.4)
     run(0.28)
     pydirectinput.press('left')
 
-
-    pydirectinput.press('f')
-    time.sleep(0.4)
     pydirectinput.press('r')
     time.sleep(1.35)
     pydirectinput.press('w')

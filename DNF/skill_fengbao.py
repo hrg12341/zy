@@ -61,7 +61,7 @@ def ms():
     # time.sleep(0.2)
     chooseDown(location[0])
 
-    run(1.7)
+    run(1.77)
 
     # 第一张图
     pydirectinput.press(['ctrl','a'])
@@ -69,41 +69,43 @@ def ms():
     # pydirectinput.press('down')
     chooseDown(location[1])
     time.sleep(0.2)
-    run(0.76)
+    run(0.96)
     listener()
 
 
     #第二张图
     time.sleep(0.2)
-    run(0.72)
+    run(0.82)
     chooseDown(location[2])
 
     pydirectinput.press(['ctrl','s'])
     time.sleep(1.5)
+    pydirectinput.press("8")
 
-
-    run(0.98)
+    run(1.28)
     listener()
 
 
     #第三张图
     # print("第三张图")
     time.sleep(0.2)
-    run(0.6)
+    run(0.66)
     pydirectinput.press(['alt','s'])
     time.sleep(1.23)
     chooseDown(location[3])
+    pydirectinput.press("8")
 
-    run(1.17)
+    run(1.07)
     listener()
 
     #第四张图
     # print("第四张图")
     time.sleep(0.2)
-    run(0.7)
+    run(0.72)
     pydirectinput.press(['ctrl','a'])
     time.sleep(1.3)
     chooseDown(location[4])
+    pydirectinput.press("8")
 
     run(1.05)
     listener()
@@ -112,9 +114,10 @@ def ms():
     run(random.uniform(0.3,0.52))
     pydirectinput.press('w')
     time.sleep(0.3)
-    pydirectinput.press('s')
+    pydirectinput.press('d')
 
     time.sleep(2.6)
+    pydirectinput.press("8")
 
     autow(2.44)
 
@@ -510,8 +513,8 @@ def pld():
     run(0.72)
     chooseDown(location[2])
 
-    pydirectinput.press('f')
-    time.sleep(0.48)
+    pydirectinput.press('h')
+    time.sleep(2.48)
     pydirectinput.press("8")
     run(0.94)
     listener()
@@ -536,8 +539,8 @@ def pld():
     # print("第四张图")
     time.sleep(0.2)
     run(0.6)
-    pydirectinput.press('h')
-    time.sleep(2.4)
+    pydirectinput.press('f')
+    time.sleep(0.4)
     chooseDown(location[4])
     pydirectinput.press("8")
     run(0.85)
