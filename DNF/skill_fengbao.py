@@ -506,7 +506,6 @@ def pld():
     chooseDown(location[0])
     time.sleep(0.1)
     pydirectinput.press(['right','right','space'])
-    pydirectinput.press('down')
 
     run(1.4)
 
@@ -528,7 +527,7 @@ def pld():
 
     pydirectinput.press('h')
     time.sleep(2.48)
-    pydirectinput.press("8")
+    zbauto()
     run(0.94)
     listener()
 
@@ -541,7 +540,7 @@ def pld():
     run(0.6)
     pydirectinput.press(['q'])
     time.sleep(0.83)
-    pydirectinput.press("8")
+    zbauto()
 
     # pydirectinput.press('down')
 
@@ -568,6 +567,7 @@ def pld():
     time.sleep(1.1)
     pydirectinput.press("ctrl")
     time.sleep(0.45)
+    pydirectinput.press('8')
     pydirectinput.press("s")
 
     time.sleep(1)
