@@ -512,8 +512,8 @@ def pld():
     # 第一张图
     pydirectinput.press('space')
     time.sleep(0.3)
-    pydirectinput.press('ctrl')
-    time.sleep(0.4)
+    pydirectinput.press('w')
+    time.sleep(0.46)
     # pydirectinput.press('down')
     chooseDown(location[1])
     time.sleep(0.2)
