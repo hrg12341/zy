@@ -360,3 +360,57 @@ def pld():
     time.sleep(3.6)
 
     autow()
+
+def ndy():
+    # 女弹药
+    # 上buff
+    pydirectinput.press(['right', 'right', 'space', 'right'])
+    time.sleep(0.38)
+    # pydirectinput.press('down')
+    # pydirectinput.press('g')
+
+    run(1.79)
+
+    # 第一张图
+    pydirectinput.press('a')
+    time.sleep(0.48)
+
+    pydirectinput.keyDown('right')
+    time.sleep(0.22)
+    pydirectinput.press('c')
+    time.sleep(random.uniform(0.45, 0.12))
+    pydirectinput.press('c')
+    time.sleep(0.36)
+    pydirectinput.keyUp('right')
+    # run(1.76)
+
+    # 第二张图
+    run(0.738)
+    pydirectinput.press(['c','d'])
+    time.sleep(0.36)
+    # run(1.81)
+    pydirectinput.keyDown('right')
+    time.sleep(0.22)
+    pydirectinput.press('c')
+    time.sleep(random.uniform(0.47, 0.62))
+    pydirectinput.press('c')
+    time.sleep(random.uniform(0.27, 0.32))
+    pydirectinput.press('c')
+    time.sleep(0.314)
+    pydirectinput.keyUp('right')
+
+    # 第三张图
+    run(0.396)
+    pydirectinput.press('w')
+    time.sleep(random.uniform(0.2,0.27))
+    # run(1.78)
+    pydirectinput.press('g')
+    time.sleep(0.22)
+    pydirectinput.press('e')
+    time.sleep(random.uniform(0.67, 0.72))
+    pydirectinput.press('y')
+    time.sleep(0.41)
+    pydirectinput.press('h')
+
+    time.sleep(8)
+    autow()

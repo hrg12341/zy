@@ -169,7 +169,7 @@ def axl():
     time.sleep(0.3)
     pydirectinput.press('alt')
     pydirectinput.keyDown("down")
-    time.sleep(0.2)n
+    time.sleep(0.2)
     pydirectinput.keyUp("down")
     time.sleep(0.1)
     chooseDown(location[0])

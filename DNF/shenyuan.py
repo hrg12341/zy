@@ -23,7 +23,7 @@ def event():
 
 def choseRole(type):
     role = ["女枪", "奶妈", "旅人", "缪斯", "花花",
-            "风法", "阿修罗", "召唤", "帕拉丁"]
+            "风法", "阿修罗", "召唤", "帕拉丁","女弹药"]
     return role[type-1]
 
 def shuatu(type):
@@ -45,6 +45,8 @@ def shuatu(type):
        zhaohuan()
     elif (type == 9):
         pld()
+    elif (type == 10):
+        ndy()
 
 if __name__ == "__main__":
     global count,type
