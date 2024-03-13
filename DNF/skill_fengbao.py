@@ -340,17 +340,16 @@ def nq():
     chooseDown(location[1])
     pydirectinput.press('s')
     time.sleep(0.7)
-    zbauto()
-    run(1.54)
+    run(1.64)
     listener()
 
     # 第二张图
     chooseDown(location[2])
-    run(0.38)
+    run(0.28)
     pydirectinput.press(['d','q'])
     time.sleep(1.88)
     zbauto()
-    run(0.58+0.9)
+    run(1.58)
     # pydirectinput.press('s')
     # time.sleep(0.6)
     # run(0.91)
@@ -362,7 +361,7 @@ def nq():
     pydirectinput.press('a')
     time.sleep(0.85)
     zbauto()
-    run(1.53)
+    run(1.58)
     listener()
 
     #第四张图
@@ -375,7 +374,7 @@ def nq():
     listener()
 
     #Boss
-    run(random.uniform(0.3,0.52))
+    run(random.uniform(0.22,0.38))
     pydirectinput.press('r')
     time.sleep(0.89)
     pydirectinput.press('s')
