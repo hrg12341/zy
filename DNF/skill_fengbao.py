@@ -35,7 +35,7 @@ def autow(second):
     time.sleep(0.3)
 
 def listener():
-    time.sleep(0.2)
+    time.sleep(0.4)
     screenshot = pyautogui.screenshot(region=(computerlo,305,295,35))
     screenshot.save("png/image.png")
     result = (str)(reader.readtext("png/image.png", detail=0))
@@ -400,51 +400,51 @@ def zhaohuan():
     time.sleep(0.6)
     pydirectinput.press(['space','ctrl'])
     time.sleep(0.1)
-    run(1.78)
+    run(1.58)
 
      # 第一张图
     pydirectinput.press('a')
     time.sleep(0.33)
     chooseDown(location[1])
     zbauto()
-    run(0.84)
+    run(0.64)
     listener()
 
     # 第二张图
     chooseDown(location[2])
     time.sleep(0.1)
-    run(1.41)
+    run(1.21)
     pydirectinput.press('ctrl')
     time.sleep(0.34)
     
     pydirectinput.press('a')
     time.sleep(0.45)
     zbauto()
-    run(0.37)
+    run(0.27)
     listener()
 
 
     #第三张图
-    run(0.83)
+    run(0.63)
     time.sleep(0.23)
     chooseDown(location[3])
     pydirectinput.press('a')
     time.sleep(0.41)
     zbauto()
-    run(1.3)
+    run(1.11)
     listener()
 
     #第4张图
     chooseDown(location[4])
-    run(0.63)
+    run(0.53)
     pydirectinput.press('a')
     time.sleep(0.36)
     zbauto()
-    run(1.31)
+    run(1.11)
     listener()
 
     #Boss
-    run(random.uniform(0.4,0.6))
+    run(random.uniform(0.3,0.46))
     pydirectinput.press('a')
     time.sleep(0.4)
     pydirectinput.press(['right','z'])

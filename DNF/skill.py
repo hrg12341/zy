@@ -31,18 +31,18 @@ def ms():
     pydirectinput.press(['up','up','space'])
     time.sleep(0.2)
 
-    run(1.7)
+    run(1.5)
     # 第一张图
     pydirectinput.press(['ctrl','a'])
     time.sleep(0.6)
 
-    run(1.6)
+    run(1.4)
     #第二张图
     # time.sleep(0.3)
     pydirectinput.press(['ctrl','s'])
     time.sleep(1.6)
 
-    run(1.315)
+    run(1.115)
 
     # time.sleep(0.3)
 
@@ -100,12 +100,12 @@ def axl():
     pydirectinput.keyUp("down")
     time.sleep(0.1)
 
-    run(1.5)
+    run(1.3)
     # 第一张图
     pydirectinput.press('q')
     time.sleep(0.6)
 
-    run(1.4)
+    run(1.2)
     # 第二张图
     # time.sleep(0.3)
     pydirectinput.press('e')
@@ -113,7 +113,7 @@ def axl():
     pydirectinput.press('e')
     time.sleep(0.2)
 
-    run(1.9)
+    run(1.7)
 
     pydirectinput.press('a')
     time.sleep(0.6)
@@ -172,18 +172,18 @@ def naima():
     pydirectinput.press(['up', 'up', 'space','down','down'])
     time.sleep(0.6)
 
-    run(1.37)
+    run(1.17)
     # 第一张图
     pydirectinput.press('a')
     time.sleep(0.7)
 
-    run(1.44)
+    run(1.24)
     # 第二张图
     # time.sleep(0.3)
     pydirectinput.press('a')
     time.sleep(1)
 
-    run(1.79)
+    run(1.59)
     time.sleep(0.12)
 
     pydirectinput.press('d')
@@ -201,20 +201,20 @@ def nq():
     pydirectinput.press(['right', 'right', 'space'])
     time.sleep(0.6)
 
-    run(1.68)
+    run(1.48)
 
      # 第一张图
     pydirectinput.press('s')
     time.sleep(0.7)
 
-    run(1.78)
+    run(1.58)
 
     # 第二张图
     # time.sleep(0.3)
     pydirectinput.press('s')
     time.sleep(1)
 
-    run(1.95)
+    run(1.75)
 
     pydirectinput.press('a')
     time.sleep(0.85)
@@ -240,20 +240,20 @@ def zhaohuan():
     time.sleep(0.6)
     pydirectinput.press(['space','ctrl'])
     time.sleep(0.1)
-    run(1.68)
+    run(1.48)
 
      # 第一张图
     pydirectinput.press('a')
     time.sleep(0.7)
 
-    run(1.64)
+    run(1.44)
 
     # 第二张图
     # time.sleep(0.3)
     pydirectinput.press('a')
     time.sleep(1.2)
 
-    run(1.81)
+    run(1.61)
 
     pydirectinput.press('a')
     time.sleep(0.65)
@@ -266,9 +266,9 @@ def zhaohuan():
 
     pydirectinput.press('ctrl')
     time.sleep(0.44)
-    pydirectinput.press('y')
+    pydirectinput.press('a')
     # pydirectinput.press(['e','r','w'])
-    time.sleep(6.0)
+    time.sleep(3.0)
 
 
     autow()
