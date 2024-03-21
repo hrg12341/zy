@@ -465,17 +465,17 @@ def fengfa():
     # pydirectinput.press('down')
     # pydirectinput.press('g')
 
-    run(1.53)
+    run(1.23)
 
     # 第一张图
     pydirectinput.press('alt')
     chooseDown(location[1])
-    run(1.06)
+    run(0.88)
 
     listener()
 
     # 第二张图
-    run(0.618)
+    run(0.518)
     chooseDown(location[2])
     pydirectinput.press('s')
     time.sleep(1.2)
@@ -484,24 +484,24 @@ def fengfa():
     pydirectinput.press('q')
     time.sleep(0.1)
     zbauto()
-    run(0.46)
+    run(0.44)
     listener()
 
     # 第三张图
     chooseDown(location[3])
-    run(0.37)
+    run(0.31)
     pydirectinput.press('ctrl')
     pydirectinput.press('g')
     time.sleep(0.1)
     zbauto()
     time.sleep(0.07)
 
-    run(1.18)
+    run(0.88)
     listener()
 
     # 第四张图
     chooseDown(location[4])
-    run(0.6)
+    run(0.46)
 
     time.sleep(0.09)
     pydirectinput.press('q')
@@ -512,15 +512,20 @@ def fengfa():
     # pydirectinput.press('down')
 
     time.sleep(0.08)
-    run(0.68)
+    run(0.58)
     listener()
 
     #Boss
-    run(0.7)
+    run(0.47)
 
     pydirectinput.press('g')
+    time.sleep(0.11)
+    pydirectinput.press('ctrl')
+    time.sleep(.26)
+    pydirectinput.press('e')
+    time.sleep(.61)
     pydirectinput.press('y')
-    time.sleep(5.56)
+    time.sleep(4.26)
     pydirectinput.press('alt')
     time.sleep(0.32)
     pydirectinput.press('8')
@@ -532,7 +537,7 @@ def pld():
     time.sleep(0.1)
     pydirectinput.press(['right','right','space'])
 
-    run(1.4)
+    run(0.98)
 
     # 第一张图
     pydirectinput.press('space')
@@ -542,18 +547,18 @@ def pld():
     # pydirectinput.press('down')
     chooseDown(location[1])
     time.sleep(0.2)
-    run(0.94)
+    run(0.93)
     listener()
 
     # 第二张图
     time.sleep(0.2)
-    run(0.72)
+    run(0.52)
     chooseDown(location[2])
 
     pydirectinput.press('h')
     time.sleep(2.48)
     zbauto()
-    run(0.94)
+    run(0.74)
     listener()
 
     # 第三张图
@@ -562,40 +567,49 @@ def pld():
     time.sleep(0.2)
     chooseDown(location[3])
     time.sleep(0.1)
-    run(0.6)
+    run(0.46)
     pydirectinput.press(['q'])
     time.sleep(0.83)
     zbauto()
 
     # pydirectinput.press('down')
 
-    run(1.15)
+    run(0.95)
     listener()
 
     # 第四张图
     # print("第四张图")
     time.sleep(0.2)
-    run(0.6)
+    run(0.416)
     pydirectinput.press('f')
     time.sleep(0.4)
     chooseDown(location[4])
     pydirectinput.press("8")
-    run(0.85)
+    run(0.65)
     listener()
     # Boss
-    run(random.uniform(0.25, 0.42))
+    run(random.uniform(0.25, 0.37))
+    pydirectinput.press('y')
+    time.sleep(3.04)
+    pydirectinput.press('right')
+    pydirectinput.keyDown('right')
+    time.sleep(0.22)
+    pydirectinput.keyUp('right')
+    pydirectinput.press('left')
     pydirectinput.press('r')
-    time.sleep(1.3)
+    time.sleep(1.6)
     pydirectinput.press('d')
     time.sleep(0.5)
     pydirectinput.press('e')
     time.sleep(1.1)
+    pydirectinput.press('w')
+    time.sleep(0.42)
     pydirectinput.press("ctrl")
     time.sleep(0.45)
     pydirectinput.press('8')
     pydirectinput.press("s")
 
-    time.sleep(1)
+    time.sleep(1.65)
 
     autow(2.44)
 
@@ -609,7 +623,7 @@ def ndy():
     # pydirectinput.press('down')
     # pydirectinput.press('g')
 
-    run(1.69)
+    run(1.65)
 
     # 第一张图
     pydirectinput.press('a')
@@ -628,7 +642,7 @@ def ndy():
 
     # 第二张图
     chooseDown(location[2])
-    run(0.338)
+    run(0.318)
     pydirectinput.press(['c','d'])
     time.sleep(0.36)
     # run(1.81)
@@ -645,7 +659,7 @@ def ndy():
 
     # 第三张图
     chooseDown(location[3])
-    run(0.596)
+    run(0.546)
     pydirectinput.press('e')
     time.sleep(random.uniform(0.2,0.27))
     # run(1.78)
@@ -660,7 +674,7 @@ def ndy():
 
     # 第四张图
     chooseDown(location[4])
-    run(0.659)
+    run(0.639)
     time.sleep(0.09)
     pydirectinput.press('a')
     time.sleep(0.47)
@@ -673,7 +687,17 @@ def ndy():
     listener()
 
     # Boss
-    run(random.uniform(0.31,0.55))
+    run(random.uniform(0.21,0.35))
+
+    pydirectinput.press('s')
+    time.sleep(0.34)
+    pydirectinput.press('f')
+    time.sleep(0.32)
+    pydirectinput.press('g')
+    time.sleep(random.uniform(0.22, 0.32))
+    pydirectinput.press('y')
+    time.sleep(0.61)
     pydirectinput.press('h')
-    time.sleep(7.56)
+    time.sleep(9.56)
+
     autow(2.25)
