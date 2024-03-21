@@ -59,7 +59,7 @@ def zbauto():
     pydirectinput.keyDown('x')
     time.sleep(random.uniform(0.4,0.67))
     pydirectinput.keyUp('x')
-    time.sleep(0.2)
+    time.sleep(random.uniform(0.33,0.44))
 
 
 def ms():
@@ -349,6 +349,7 @@ def nq():
     pydirectinput.press(['d','q'])
     time.sleep(1.88)
     zbauto()
+    time.sleep(0.12)
     run(1.58)
     # pydirectinput.press('s')
     # time.sleep(0.6)
@@ -361,6 +362,7 @@ def nq():
     pydirectinput.press('a')
     time.sleep(0.85)
     zbauto()
+    time.sleep(0.12)
     run(1.58)
     listener()
 
@@ -370,6 +372,7 @@ def nq():
     pydirectinput.press('s')
     time.sleep(0.8)
     zbauto()
+    time.sleep(0.12)
     run(1.5)
     listener()
 

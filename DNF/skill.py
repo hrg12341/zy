@@ -137,18 +137,18 @@ def lvren():
     pydirectinput.press(['right', 'right', 'space'])
     time.sleep(0.6)
 
-    run(1.23)
+    run(0.98)
     # 第一张图
     pydirectinput.press('g')
     time.sleep(0.7)
 
-    run(1.26)
+    run(1.03)
     # 第二张图
     # time.sleep(0.3)
     pydirectinput.press('f')
     time.sleep(0.5)
 
-    run(1.36)
+    run(1.16)
 
     pydirectinput.press('s')
     time.sleep(0.84)
@@ -158,7 +158,7 @@ def lvren():
     pydirectinput.press('q')
     time.sleep(0.4)
     pydirectinput.press('alt')
-    time.sleep(0.35)
+    time.sleep(random.uniform(0.2,0.35))
     pydirectinput.press('r')
 
     time.sleep(2.6)
