@@ -64,20 +64,20 @@ def huahua():
     time.sleep(0.2)
 
 
-    run(1.3)
+    run(1.1)
     # 第一张图
     pydirectinput.press('a')
     time.sleep(0.6)
     pydirectinput.press("space")
     time.sleep(0.3)
 
-    run(1.2)
+    run(1.04)
     # 第二张图
     # time.sleep(0.3)
     pydirectinput.press('d')
     time.sleep(1)
 
-    run(1)
+    run(0.89)
 
     pydirectinput.press('s')
     time.sleep(0.6)
