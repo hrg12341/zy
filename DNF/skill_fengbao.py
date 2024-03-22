@@ -66,7 +66,7 @@ def ms():
     # 上buff
     pydirectinput.press(['right','right','space'])
     # pydirectinput.press(['up','up','space'])
-    # time.sleep(0.2)
+    time.sleep(0.2)
     chooseDown(location[0])
 
     run(1.57)
@@ -97,7 +97,7 @@ def ms():
     #第三张图
     # print("第三张图")
     time.sleep(0.2)
-    run(0.56)
+    run(0.62)
     pydirectinput.press(['alt','s'])
     time.sleep(1.23)
     chooseDown(location[3])
@@ -124,7 +124,9 @@ def ms():
     time.sleep(0.3)
     pydirectinput.press('d')
 
-    time.sleep(2.6)
+    time.sleep(1.4)
+    pydirectinput.press('r')
+    time.sleep(1.2)
     pydirectinput.press('8')
 
     autow(2.44)
@@ -278,33 +280,36 @@ def naima():
     # 上buff
     pydirectinput.press(['right', 'right', 'space'])
     # pydirectinput.press(['up', 'up', 'space','down','qdown'])
-    time.sleep(0.6)
+    time.sleep(0.22)
+    chooseDown(location[0])
 
-    run(1.37)
+    run(1.17)
     # 第一张图
     chooseDown(location[1])
     pydirectinput.press('a')
-    time.sleep(0.7)
+    time.sleep(0.75)
+    zbauto()
 
     run(0.92)
     listener()
 
     # 第二张图
-    run(0.34)
+    run(0.46)
     # time.sleep(0.3)
     chooseDown(location[2])
     pydirectinput.press('a')
     time.sleep(1)
-
-    run(1.24)
+    zbauto()
+    run(0.96)
     listener()
 
     #第三张图
-    run(0.46)
+    run(0.36)
     chooseDown(location[3])
     pydirectinput.press('q')
     time.sleep(0.45)
-    run(1.18)
+    zbauto()
+    run(1.028)
     listener()
 
     #第四张图
@@ -313,18 +318,19 @@ def naima():
     chooseDown(location[4])
     pydirectinput.press("t")
     time.sleep(0.45)
-    run(1.24)
+    zbauto()
+    run(1.04)
     listener()
 
     #Boss
-    run(0.35)
+    run(0.45)
     pydirectinput.press('d')
     time.sleep(0.44)
     pydirectinput.press(['s'])
     time.sleep(1)
-    # pydirectinput.press('q')
-    time.sleep(1.6)
 
+    time.sleep(1.6)
+    pydirectinput.press('8')
     autow(2.41)
 
 
@@ -378,7 +384,7 @@ def nq():
 
     #Boss
     run(random.uniform(0.22,0.38))
-    pydirectinput.press('r')
+    pydirectinput.press(['r','q','q'])
     time.sleep(0.89)
     pydirectinput.press('s')
     time.sleep(0.71)
