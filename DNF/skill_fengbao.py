@@ -69,7 +69,7 @@ def ms():
     # time.sleep(0.2)
     chooseDown(location[0])
 
-    run(1.77)
+    run(1.57)
 
     # 第一张图
     pydirectinput.press(['ctrl','a'])
@@ -77,49 +77,49 @@ def ms():
     # pydirectinput.press('down')
     chooseDown(location[1])
     time.sleep(0.2)
-    run(0.96)
+    run(0.76)
     listener()
 
 
     #第二张图
     time.sleep(0.2)
-    run(0.82)
+    run(0.72)
     chooseDown(location[2])
 
     pydirectinput.press(['ctrl','s'])
     time.sleep(1.5)
     zbauto()
 
-    run(1.28)
+    run(1.12)
     listener()
 
 
     #第三张图
     # print("第三张图")
     time.sleep(0.2)
-    run(0.66)
+    run(0.56)
     pydirectinput.press(['alt','s'])
     time.sleep(1.23)
     chooseDown(location[3])
     zbauto()
 
-    run(1.07)
+    run(0.99)
     listener()
 
     #第四张图
     # print("第四张图")
     time.sleep(0.2)
-    run(0.72)
+    run(0.52)
     pydirectinput.press(['ctrl','a'])
     time.sleep(1.3)
     chooseDown(location[4])
     zbauto()
 
-    run(1.05)
+    run(0.98)
     listener()
     #Boss
 
-    run(random.uniform(0.3,0.52))
+    run(random.uniform(0.3,0.42))
     pydirectinput.press('w')
     time.sleep(0.3)
     pydirectinput.press('d')
