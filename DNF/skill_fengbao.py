@@ -87,7 +87,7 @@ def ms():
     chooseDown(location[2])
 
     pydirectinput.press(['ctrl','s'])
-    time.sleep(1.5)
+    time.sleep(1.44)
     zbauto()
 
     run(1.12)
@@ -111,7 +111,7 @@ def ms():
     time.sleep(0.2)
     run(0.52)
     pydirectinput.press(['ctrl','a'])
-    time.sleep(1.3)
+    time.sleep(1.23)
     chooseDown(location[4])
     zbauto()
 
@@ -124,7 +124,7 @@ def ms():
     time.sleep(0.3)
     pydirectinput.press('d')
 
-    time.sleep(1.4)
+    time.sleep(random.uniform(1.2,1.4))
     pydirectinput.press('r')
     time.sleep(1.2)
     pydirectinput.press('8')
@@ -471,12 +471,12 @@ def fengfa():
     # pydirectinput.press('down')
     # pydirectinput.press('g')
 
-    run(1.23)
+    run(1.26)
 
     # 第一张图
     pydirectinput.press('alt')
     chooseDown(location[1])
-    run(0.88)
+    run(0.98)
 
     listener()
 
@@ -543,7 +543,7 @@ def pld():
     time.sleep(0.1)
     pydirectinput.press(['right','right','space'])
 
-    run(0.98)
+    run(1.03)
 
     # 第一张图
     pydirectinput.press('space')
@@ -553,7 +553,7 @@ def pld():
     # pydirectinput.press('down')
     chooseDown(location[1])
     time.sleep(0.2)
-    run(0.93)
+    run(0.91)
     listener()
 
     # 第二张图
@@ -595,23 +595,25 @@ def pld():
     listener()
     # Boss
     run(random.uniform(0.25, 0.37))
-    pydirectinput.press('y')
-    time.sleep(3.04)
-    pydirectinput.press('right')
-    pydirectinput.keyDown('right')
-    time.sleep(0.22)
-    pydirectinput.keyUp('right')
-    pydirectinput.press('left')
+
+    # pydirectinput.press('a')
+    # time.sleep(0.22)
+    #
+    # pydirectinput.press('left')
     pydirectinput.press('r')
     time.sleep(1.6)
     pydirectinput.press('d')
     time.sleep(0.5)
     pydirectinput.press('e')
     time.sleep(1.1)
-    pydirectinput.press('w')
-    time.sleep(0.42)
-    pydirectinput.press("ctrl")
-    time.sleep(0.45)
+    pydirectinput.press('t')
+    time.sleep(6.24)
+    pydirectinput.press('space')
+    time.sleep(0.2)
+    # pydirectinput.press('w')
+    # time.sleep(0.42)
+    # pydirectinput.press("ctrl")
+    # time.sleep(0.45)
     pydirectinput.press('8')
     pydirectinput.press("s")
 
@@ -706,4 +708,4 @@ def ndy():
     pydirectinput.press('h')
     time.sleep(9.56)
 
-    autow(2.25)
+    autow(2.1)
